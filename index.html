@@ -1,1 +1,70 @@
-hi
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[你的名字]</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #EDF0F3;
+    --ink: #17202C;
+    --muted: #5A6675;
+    --line: #C9D0D8;
+    --accent: #2A5C8A;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Schibsted Grotesk", "Helvetica Neue", Arial, "PingFang TC", "Microsoft JhengHei", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 64px 24px;
+  }
+  main { max-width: 640px; margin: 0 auto; width: 100%; }
+  h1 {
+    font-size: clamp(48px, 11vw, 96px);
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    margin-bottom: 28px;
+  }
+  .role { font-size: 22px; font-weight: 500; margin-bottom: 20px; }
+  .bio { color: var(--muted); max-width: 34em; margin-bottom: 40px; }
+  ul { list-style: none; padding: 0; border-top: 1px solid var(--line); }
+  li { border-bottom: 1px solid var(--line); }
+  a {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  a span { color: var(--muted); font-weight: 400; }
+  a:hover, a:focus-visible { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+  footer { max-width: 640px; margin: 48px auto 0; width: 100%; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Luke</h1>
+  <p class="role"></p>
+  <p class="bio"></p>
+  <ul>
+    <li><a href="mailto:[you@example.com]">Email <span></span></a></li>
+    <li><a href="https://www.linkedin.com/in/[帳號]">LinkedIn <span>[</span></a></li>
+    <li><a href="https://github.com/lukehuangisluke">GitHub <span>lukehuangisluke</span></a></li>
+  </ul>
+</main>
+<footer>© 2026 Luke</footer>
+</body>
+</html>
